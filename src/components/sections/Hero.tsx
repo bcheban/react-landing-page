@@ -38,7 +38,8 @@ export const Hero = () => {
                   </svg>
                         </span>
                         <input type="email" placeholder="jondoe@gmail.com" className="w-full py-3 outline-none bg-transperent" />
-                        <Button className="min-w-max text-white">
+                        <Button className="px-6 py-3 rounded-full outline-none cursor-pointer
+                 relative overflow-hidden border border-transparent bg-violet-600 min-w-max text-white">
                             <span className="relative z-[5]">Get Started</span>
                         </Button>
                     </form>
@@ -57,4 +58,3 @@ export const Hero = () => {
     <Numbers />
     </section>
 }
-

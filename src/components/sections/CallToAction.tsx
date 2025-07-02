@@ -13,7 +13,8 @@ export const CTA = () => {
                         Leverage our AI-powered platform to revolutionize your digital marketing efforts. Get data-driven insights and automation at your fingertips.
                     </Paragraph>
                      <div className="mx-auto max-w-md sm:max-w-xl pt-10 dark:text-white">
-                    <Button> Get In Touch</Button>
+                    <Button className="px-6 py-3 rounded-full outline-none cursor-pointer
+                 relative overflow-hidden border border-transparent bg-violet-600 text-white"> Get In Touch</Button>
             </div>
             </div>
             </div>

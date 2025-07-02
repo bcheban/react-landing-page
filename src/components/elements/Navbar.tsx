@@ -47,7 +47,8 @@ export const Navbar = () => {
                             lg:pb-0 border-b border-box-border lg:border-0
                             px-6 lg:px-0"
             >
-              <BtnLink text="Get Started" href="#cta" className="" />
+              <BtnLink text="Get Started" href="#cta" className="px-6 py-3 rounded-full outline-none cursor-pointer
+                 relative overflow-hidden border border-transparent bg-violet-600" />
             </div>
           </div>
 

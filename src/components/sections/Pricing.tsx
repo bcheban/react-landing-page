@@ -30,7 +30,8 @@ export const Pricing = () => {
                     </ul>
                     <div>
                        <div className="mt-8">
-                        <Button className="w-full transform transition-transform duration-300 hover:scale-105 text-white">Choose plan</Button>
+                        <Button className="px-6 py-3 rounded-full outline-none cursor-pointer
+                 relative overflow-hidden border border-transparent bg-violet-600 w-full transform transition-transform duration-300 hover:scale-105 text-white">Choose plan</Button>
                     </div>
                 </div>
             </div>
