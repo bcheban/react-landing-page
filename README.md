@@ -1,69 +1,72 @@
-# React + TypeScript + Vite
+<p align="center">
+  <img src="https://raw.githubusercontent.com/bcheban/react-landing-page/main/public/vite.svg" alt="EdgeAI Landing Page Logo" width="120" />
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align="center">EdgeAI — React Landing Page</h1>
 
-Currently, two official plugins are available:
+<p align="center">
+  <strong>A modern, fully responsive AI-product landing page built with React 19, TypeScript, and Tailwind CSS 4.</strong>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+  <a href="https://react-landing-page-ivory-one.vercel.app">Live Demo</a> |
+  <a href="https://github.com/bcheban/react-landing-page">GitHub Repo</a>
+</p>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📌 Project Overview
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**EdgeAI** is a polished single-page marketing site built with **React 19** and **TypeScript**, styled with **Tailwind CSS 4**, and powered by **Vite 7** for a fast dev experience.  
+It is structured as a classic SaaS-style landing page with clearly defined sections — Hero, Brands, Services, About Us, Pricing, and a final Call-to-Action — wrapped in a shared layout with consistent header and footer.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Global theme state (light/dark) is managed with **Zustand**, and section data (services, pricing plans) is kept in dedicated TypeScript modules so content is easy to update without touching markup.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **🦸 Hero Section** – Headline, subheadline, and primary call-to-action to introduce the product.
+- **🏢 Brands Section** – Logo strip highlighting partner / customer brands.
+- **🧩 Services Section** – Cards describing core services, sourced from typed data (`services-data.tsx`).
+- **👥 About Us Section** – Mission and value statement for the product.
+- **💰 Pricing Section** – Tiered pricing plans rendered from typed config (`pricing-plan.ts`).
+- **📣 Call-to-Action Section** – Final conversion-focused block before the footer.
+- **🌗 Light / Dark Theme** – Global theme switching powered by Zustand store.
+- **🧱 Shared Layout** – Reusable header, footer, and page shell via the `Layout` component.
+- **🧰 Modular Architecture** – Split into `sections`, `cards`, `elements`, and `shared` component folders.
+- **🔒 Type-Safe** – Written end-to-end in TypeScript with strict ESLint rules.
+- **📱 Fully Responsive** – Mobile-first design, optimized for all screen sizes.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🛠 Tech Stack
+
+### Core Framework & Build Tools
+<p>
+  <img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React 19" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Vite_7-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite 7" />
+</p>
+
+### Styling
+<p>
+  <img src="https://img.shields.io/badge/Tailwind_CSS_4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS 4" />
+  <img src="https://img.shields.io/badge/@tailwindcss_vite-0A74DA?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="@tailwindcss/vite" />
+</p>
+
+### State Management
+<p>
+  <img src="https://img.shields.io/badge/Zustand-2C2C2C?style=for-the-badge&logo=react&logoColor=white" alt="Zustand" />
+</p>
+
+### Tooling
+<p>
+  <img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint" />
+  <img src="https://img.shields.io/badge/typescript--eslint-1E293B?style=for-the-badge&logo=typescript&logoColor=white" alt="typescript-eslint" />
+</p>
+
+### Deployment
+<p>
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+</p>
